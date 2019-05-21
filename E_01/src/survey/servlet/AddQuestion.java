@@ -56,8 +56,6 @@ public class AddQuestion extends HttpServlet {
 			}
 		}
 
-	
 		response.sendRedirect("ViewSurvey?id=" + request.getParameter("id"));
 	}
-
 }
