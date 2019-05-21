@@ -1,0 +1,33 @@
+#table-headers {
+    text-align: center;
+}
+ 
+.table-headers-border {
+    border-bottom: 3px solid black;
+    border-collapse: separate;
+}
+
+.double-border {
+    border-bottom: 4px double black;
+    border-bottom:
+}
+
+.single-border{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+#table-form {
+    border: 1px solid black;
+    padding:  10px;
+    margin: 3px;
+}
+
+#table-form td {
+    padding: 5px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}

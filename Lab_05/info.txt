@@ -1,0 +1,17 @@
+In this lab you are going to use CSS to format Faculty.html and AddFaculty.html you created in Lab 3. You are free to make any changes to the HTML pages, but for CSS you must use an external stylesheet.
+
+1. The formatted Faculty.html should look like the following:
+
+Faculty
+
+In particular, remove the border and cellpadding attributes used for <table> in Lab 3, and use CSS to create the borders shown in the picture above. Also use CSS to remove underline for the links.
+
+2. The formatted AddFaculty.html should look like the following:
+
+AddFaculty
+
+For this exercise you must use CSS instead of <table> to format the form.
+
+3. Upload Faculty.html, AddFaculty.html and the style sheet to your CS3 account and make sure they work properly on CS3.
+
+4. Create another HTML file lab5.html which contains a hyperlink to your Faculty.html page on the CS3 server, and upload all HTML files and the style sheet to CSNS.

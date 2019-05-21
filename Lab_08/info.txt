@@ -1,0 +1,7 @@
+1. Create a web application that consists of a HelloServlet servlet and a HelloJSTL.jsp as described in the lecture notes. Deploy the application on the CS3 server so that the servlet and the JSP page can be accessed through the following URLs, respectively:
+
+http://cs3.calstatela.edu:8080/username/HelloServlet
+http://cs3.calstatela.edu:8080/username/HelloJSTL.jsp
+Note that username should be your account name on the CS3 server, e.g. cs3220stu31.
+
+2. Create an HTML file lab8.html which contains the hyperlinks to your servlet and JSP page on the CS3 server. Upload lab8.html, HelloServlet.java, and HelloJSTL.jsp to CSNS.

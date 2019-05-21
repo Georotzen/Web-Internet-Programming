@@ -1,0 +1,17 @@
+In this lab you are going to create a new, responsive version of MyBargains using Bootstrap. Please check out the two linked images below to see how your web page should look like:
+
+Image 1: the page shown in a wide browser window
+Image 2: the page shown in a narrow browser window (to simulate the screen of a mobile device)
+Specifically:
+
+The overall layout should be created using Bootstrap's grid system inside a fixed-width container.
+The header (i.e. site name and menu) should be created using a Bootstrap Navbar.
+Each deal should use a Bootstrap Card. Note that a "latest deal" has a card header and a link "See Deal" but a "trending deal" does not.
+When the page is displayed on a mobile device (i.e. Small or Extra Small in Bootstrap terminology), the menu should be collapsed into a menu button, and only the "Latest Deals" will be displayed (i.e. both ads and the "Trending Deals" will be hidden).
+Note that in addition to Bootstrap, you may need to use additional CSS to create the styling shown in the sample images. You may use either internal or external stylesheet, but you may not use inline styles.
+
+1. You can download mybargains1.html which contains the skeleton text and structure for the page. Rename the file to mybargains.html and format it as required. You may change the content of the HTML file.
+
+2. Upload mybargains.html and any stylesheet you created to your CS3 account and make sure they work properly on CS3.
+
+3. Create another HTML file lab7.html which contains a hyperlink to your mybargains.html page on the CS3 server. Upload all HTML files and any stylesheet you created to CSNS.

@@ -1,0 +1,5 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab16.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted. Please do not change the files uploaded to CS3 after the due time - doing so will be considered cheating.
+
+(40pt) Follow the instructions in Setting Up MySQL for CS3220 to set up your development environment. If you do not want to install MySQL on your local computer, you may skip Step 1 and 2. For Step 3 and 4, the host name in the database URL in the HelloJDBC servlet should be localhost if you have a local database, or cs3.calstatela.edu if you don't.
+
+The hyperlink in lab16.html should point to your HelloJDBC servlet deployed on CS3.

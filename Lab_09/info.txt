@@ -1,0 +1,40 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab9.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted.
+
+Body mass index (BMI) is a measure of health based on height and weight. It can be calculated by taking your weight in kilograms and dividing it by the square of your height in meters. The interpretation of BMI for people 20 years or older is as follows:
+
+BMI	Interpretation
+BMI < 18.5	Underweight
+18.5 <= BMI < 25.0	Normal
+25.0 <= BMI < 30.0	Overweight
+30.0 <= BMI	Obese
+In this lab you are going to implement an online BMI calculator as follows:
+
+1. Create a Dynamic Web Project in Eclipse.
+
+2. Create a servlet called BMICalculator:
+
+In doGet() (or use an HTML file), display a form like the following:
+Please enter your height: 
+ feet and 
+ inches
+
+Please enter your weight: 
+ pounds
+
+Calculate BMI
+
+Clicking the Calculate BMI button should submit the form to the same servlet.
+
+In doPost(), process the submitted data, calculate and display the BMI and the interpretation. For example: 
+Your BMI is 20.1. You are of normal weight.
+Back to BMI Calculator
+
+Clicking on the Back to BMI Calculator link should take the user back to the form.
+
+Note that before you can calculate BMI, you must first convert the height in feet and inches into meters, and the weight in pounds into kilograms. The conversion rates are:
+
+1 inch = 1/12 foot = 0.0254 meters
+1 pound = 0.4536 kilograms
+You may verify your implementation using CDC's BMI Calculator.
+
+3. Deploy your project on CS3. Upload the source code and lab9.html to CSNS.

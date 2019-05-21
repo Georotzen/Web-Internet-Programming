@@ -1,0 +1,25 @@
+Please upload your solutions to CSNS. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted.
+
+(48pt) Use the File Manager Database (file-manager.sql) to answer the following queries. For this exercise, please submit an SQL script lab17.sql, and make sure that you include the questions in the script as SQL comments. For example:
+
+-- 1. List the names of the top-level (i.e. parent_id is null) files and folders of the user cysun. The results should list the folders first, and then the files.
+
+select ...
+
+1. List the names of the top-level (i.e. parent_id is null) files and folders of user cysun. The results should list the folders first, and then the files.
+
+2. List the names of the files and folders in the folder with id=8.
+
+3. Find the name of the parent folder of the file with id=14.
+
+4. List the names of all the empty folders.
+
+5. Find the number of files (excluding folders) owned by user jdoe.
+
+6. Insert a new folder CS1222 owned by user with id=1 into the folder with id=2.
+
+7. Change the name of the folder Pictures to Images (assuming there is only one folder whose name is Pictures).
+
+8. Delete all the files (i.e. not folders) under the folder with id=13.
+
+9 (Extra Credit +10). List the names of the folder owned by user cysun, and for each folder, the number of files and folders in the folder (or 0 for empty folders).

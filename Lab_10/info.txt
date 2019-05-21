@@ -1,0 +1,21 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab10.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted. Please do not change the files uploaded to CS3 after the due time - doing so will be considered cheating.
+
+In this lab you are going to implement basic login and logout operations using the Servlet Session Tracking API.
+
+1. (40pt) Create a servlet Login:
+
+In doGet(), display a login form, e.g.
+Username: 
+
+Password: 
+
+
+In doPost(), check if the username and password match cysun and abcd, respectively. If the username and password are correct, set a session attribute user and redirect the user to the Members servlet; if not, redirect the user back to the login form. You may add additional accounts if you want, but cysun/abcd must be a valid account so we can test your code.
+2. (20pt) Create a servlet Members. This servlet first checks if the session attribute user is set. If so, it displays the following:
+
+Welcome to the Members Area
+Logout
+
+Otherwise it redirects the user back to the login form.
+
+3.(10pt) Clicking on Logout should take the user to a Logout servlet which invalidate the session (i.e. calling the invalidate() method in HttpSession), then redirect the user back to the login form.

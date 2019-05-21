@@ -1,0 +1,58 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab12.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted. Please do not change the files uploaded to CS3 after the due time - doing so will be considered cheating.
+
+[Problem Description]
+
+Please download the file DrivingTest.txt and put it under the /WEB-INF folder of your project. This file contains a number of questions for a driving test. The format of the file is as follows:
+
+Each question occupies five consecutive lines: the first line is the question description, the next three lines are three possible answers, and the last line is a number 1, or 2, or 3, which indicates which answer is the correct answer.
+The exact number of questions is unknown, but we do know that the questions are separated from one another by an empty line.
+Note that you may not change the content of this file.
+
+For this lab, develop a web application that allows a user to browse the driving test one question at a time. For example:
+
+When parking your vehicle parallel to the curb on a level street.
+1. Your front wheels must be turned toward the street.
+2. Your wheels must be within 18 inches of the curb.
+3. One of your rear wheels must touch the curb.
+Correct answer: 2
+
+Next
+
+A use may click on the Next link to see the next question, and when the last question is shown, clicking on Next should take the user back to the first question. The trick to implement this is to embed a request parameter in the link, and the request parameter tells the application which question to display next. For example, suppose the name of the servlet is DrivingTestBrowser, and the name of the request parameter is index, which represents the index of the question to be displayed next, then DrivingTestBrowser?index=1 tell the application to display the second question (index starts at 0).
+
+[Implementation]
+
+Your implementation must use the MVC architecture discussed in class. In particular:
+
+1. (10pt) Create a model class Question to hold the information about a question. The class should have the following properties:
+
+String properties of description, answerA, answerB, and answerC.
+int property correctAnswer.
+2. (60pt) Create a controller servlet DrivingTestBrowser as follows:
+
+In init(), read DrivingTest.txt and store the questions in a List<Question> in the application scope.
+In doGet(), process the request, select the question to be displayed, and pass the question (and additional data if necessary) to a view (i.e. JSP).
+3. (30pt) Create a JSP that displays the question and the Next link using EL.
+
+[Notes]
+
+In the servlet you can get the path to the file DrivingTest.txt using getServletContext().getRealPath("/WEB-INF/DrivingTest.txt"), and this file should also be uploaded to CS3 when you deploy your application.
+
+There are two common ways to read a text file in Java:
+
+a) Using Scanner. For example:
+
+        Scanner in = new Scanner(new File(filename));
+        while( in.hasNextLine() )
+            System.out.println(in.nextLine());
+        in.close();
+
+b) Using BufferedReader. For example:
+
+        BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(filename))); 
+        String line;
+        while( (line = in.readLine()) != null )
+            System.out.println(line);
+        in.close();
+
+Please also read To Catch or Not To Catch regarding exception handling in Java.

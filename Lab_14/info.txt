@@ -1,0 +1,50 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab14.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted.
+
+Please download the file teams.txt and put it under the /WEB-INF folder of your project (note that you may not change the content of this file). This file contains the names of the teams participating in a single-elimination tournament, and each team name occupies one line. Your code should be able to handle any number of teams as long as the total number of teams is a power of 2.
+
+In this exam you are going to develop a web application that allows users to pick the winner of each match in the tournament. Your implementation must follow the MVC architecture discussed in class. In particular:
+
+Requests should always be sent to controllers, not directly to views.
+Servlets do not generate HTML content.
+No Java code in JSP, i.e. no JSP expression (<%= %>), JSP scriptlet (<% %>), or JSP declaration (<%! %>).
+When the application is requested for the first time by a user, it displays the first-round matchups, i.e. the 1st team vs the 2nd team, the 3rd team vs the 4th team, and so on. For example:
+
+Bracketology
+Match 1: Kansas St. Kentucky 
+
+Match 2: Loyola Chicago  Nevada 
+
+Match 3: Villanova  West Virginia 
+
+Match 4: Texas Tech  Purdue 
+
+Next
+
+The user will pick the winner of each match, then click the Next button to go to the next round. For example, suppose a user picks Kentucky, Nevada, Villanova, and Texas Tech to win in the first round, the application should show the following after the user clicks Next:
+
+Bracketology
+Match 1: Kentucky  Nevada 
+
+Match 2: Villanova  Texas Tech 
+
+Next
+
+This process will continue until there is only one team left, in which case the application displays the remaining team as the champion. For example:
+
+Bracketology
+The champion is: Villanova
+
+Start Over
+
+Clicking on Start Over should take the user back to the first round and let the user play again.
+
+HINT: one of the difficulties in this application is that the request parameters are different in each round. To deal with this, first you can use request.getParameterMap() to get all the parameters, and second, you need to design the request parameters in a way that allows you to figure out which request parameter is for which match -- for example, you may have request parameters like "match1=2&match2=1"  which mean that the user has picked the second team in Match 1 and the first team in Match 2 as the winners.  
+
+Grading
+
+Reading teams from file and displaying first-round matcheups (40pt)
+Moving through the tournament (60pt)
+Displaying champion and handling Start Over (20pt)
+lab14.html is missing or does not have the correct link to your application on the CS3 server (-10pt)
+Only features working correctly on the CS3 server will receive full credit. Partial credit will be given at my discretion.
+Please do not modify your files on the CS3 server after the due time. Doing so will be considered cheating.

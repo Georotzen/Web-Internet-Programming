@@ -1,0 +1,8 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab15.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted. Please do not change the files uploaded to CS3 after the due time - doing so will be considered cheating.
+
+(60pt) Create a custom tag <fileSize> with one required attributes value and no body content. The tag can be used to display file size in bytes (B), kilobytes (KB), or megabytes (MB). Specifically:
+
+If value < 210, it displays the value in bytes. For example, <cs3220:fileSize value="900" /> should produce 900 B.
+If 210 <= value < 220, it displays the value in KB. For example, <cs3220:fileSize value="900000" /> should produce 879 KB. Note that the displayed value should be rounded to the closest integer.
+If value >= 220, it displays the value in MB. For example, <cs3220:fileSize value="9000000" /> should produce 9 MB.
+Create a JSP page lab15.jsp to test the custom tag and make sure it works correctly.
