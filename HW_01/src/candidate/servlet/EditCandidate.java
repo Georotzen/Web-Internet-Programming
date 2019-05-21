@@ -33,9 +33,7 @@ public class EditCandidate extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		Candidate candidate = getCandidate(Integer.valueOf(request.getParameter("id")));
-		
 		
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
@@ -79,14 +77,13 @@ public class EditCandidate extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		Candidate candidate = getCandidate(Integer.valueOf(request.getParameter("id")));
 
-        candidate.setName(request.getParameter("name"));
-        candidate.setSpecialities(request.getParameter("specialities"));
-        candidate.setPresentation(request.getParameter("presentation"));
-
-        response.sendRedirect("CandidateReview");
+        	candidate.setName(request.getParameter("name"));
+        	candidate.setSpecialities(request.getParameter("specialities"));
+        	candidate.setPresentation(request.getParameter("presentation"));
+		
+        	response.sendRedirect("CandidateReview");
 	}
 
 }
