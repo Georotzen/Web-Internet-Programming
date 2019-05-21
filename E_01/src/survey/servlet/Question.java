@@ -31,6 +31,5 @@ public class Question {
 	
 	public void addChoice(String choice) {
 		choices.add(choice);
-		
 	}
 }
