@@ -21,16 +21,14 @@ public class CandidateReview extends HttpServlet {
     }
     
     public void init(ServletConfig config) throws ServletException {
-    	
     	super.init(config);
     	
     	List<Candidate> candidates = new ArrayList<Candidate>();
     	candidates.add(new Candidate(1, "John", "Machine Learning", "10am on 2/20 in ET A227"));
-		candidates.add(new Candidate(2, "Jack", "Computer Vision", "10am on 2/25 in ET A332"));
-		candidates.add(new Candidate(3, "Jane", "Machine Learning", "3pm on 2/27 in ET A126"));
-		candidates.add(new Candidate(4, "May", "Computer Science Education", "3:30pm on 3/11 in FA A219"));
-		
-		getServletContext().setAttribute("candidates", candidates);
+	candidates.add(new Candidate(2, "Jack", "Computer Vision", "10am on 2/25 in ET A332"));
+	candidates.add(new Candidate(3, "Jane", "Machine Learning", "3pm on 2/27 in ET A126"));
+	candidates.add(new Candidate(4, "May", "Computer Science Education", "3:30pm on 3/11 in FA A219"));
+	getServletContext().setAttribute("candidates", candidates);
     }
 
 	@SuppressWarnings("unchecked")
