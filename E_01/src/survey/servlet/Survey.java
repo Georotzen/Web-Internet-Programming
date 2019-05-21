@@ -43,6 +43,4 @@ public class Survey {
 	public void addQuestion(Question question) {
 		questions.add(question);
 	}
-
-	
 }
