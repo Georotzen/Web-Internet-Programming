@@ -1,0 +1,11 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file hw2.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after 3PM of the due date, so please turn in your work on time.
+
+[Candidate Reviews]
+
+In this assignment you are going to continue to work on the candidate review web application. All features described in previous homework must work properly; otherwise you will not receive any credit.
+
+(40pt) Modify the application so it uses MVC architecture discussed in class. In particular:
+
+Requests should always be sent to controllers, not directly to views.
+Servlets do not generate HTML content.
+No Java code in JSP, i.e. no JSP expression (<%= %>), JSP scriptlet (<% %>), or JSP declaration (<%! %>).

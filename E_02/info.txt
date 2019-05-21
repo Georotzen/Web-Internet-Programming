@@ -1,0 +1,52 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file final.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted.
+
+In this exam you are going to develop a simple expense tracker. Your application must use a database to store the data, and you must submit an SQL script file final.sql which contains the statements to create and populate all the tables for the application. Your implementation must follow the MVC architecture and use JDBC for database access.
+
+The main page of the application displays the expenses. For example:
+
+Total: $175.86
+
+Month	Amount	Tags	Operation
+4/2019	$127.40	Transportation, MetroLink Monthly Pass	Delete
+5/2019	$17.15	Trader Joe, Groceries	Delete
+5/2019	$31.31	Transportation, Gas	Delete
+Add
+An expense consists of a month, an amount, and one or more tags separated by commas (a tag is a keyword or phrase that is associated with an expense). Note that
+
+The total amount of all the expenses are shown on top of the table.
+All amounts display two digits after the decimal point.
+You may treat month as a string -- the format you use to enter/display a month does not matter as long as it's consistent.
+A user may use the form at the end of the table to enter a new expense. In particular,
+
+The month of the expense is optional, while both the amount and the tags are required. You may assume the user will always provide correct input, i.e. no input validation necessary.
+If the user does not enter a month, the application should set the month of the expense to be the current month.
+Each expense must have at least one tag. Multiple tags are separated by commas.
+After a new expense is entered, the user should be redirected back to the main page.
+A user may click on a month to show only the expenses in that month. For example, after a user clicks on 5/2019, the application displays the following:
+
+Total: $48.46
+
+Month	Amount	Tags	Operation
+5/2019	$17.15	Trader Joe, Groceries	Delete
+5/2019	$31.31	Transportation, Gas	Delete
+Add
+Note that the total amount is changed accordingly. Similarly, a user may click on a tag to show only the expenses with the selected tag. For example, after a user clicks on Transportation, the application displays the following:
+
+Total: $158.71
+
+Month	Amount	Tags	Operation
+4/2019	$127.40	Transportation, MetroLink Monthly Pass	Delete
+5/2019	$31.31	Transportation, Gas	Delete
+Add
+And finally, a user may delete an expense by clicking on the corresponding Delete link (or button). After an expense is deleted, the user should be redirected back to the main page. 
+
+Grading
+
+Display expenses (30pt)
+Add expense (30pt)
+Filter expenses by month (15pt)
+Filter expenses by tag (15pt)
+Delete expense (10pt)
+final.html is missing or does not have the correct link to your application on the CS3 server (-10pt)
+Only features working correctly on the CS3 server will receive full credit. Partial credit will be given at my discretion.
+Please do not modify your files on the CS3 server after the due time. Doing so will be considered cheating.

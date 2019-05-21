@@ -1,0 +1,62 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file midterm.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted.
+
+In this exam you are going to develop a web application that allows users to create surveys. Each survey has a name and a number of questions, and each question has a description and a number of choices (up to 10).Your implementation must follow the MVC architecture discussed in class. In particular:
+
+Requests should always be sent to controllers, not directly to views.
+Servlets do not generate HTML content.
+No Java code in JSP, i.e. no JSP expression (<%= %>), JSP scriptlet (<% %>), or JSP declaration (<%! %>).
+1. List Surveys
+
+When the application is requested without any parameters, it displays the list of created surveys. For example:
+
+Survey Builder
+Create Survey
+
+CS 4961 Readiness Survey for Fall 2019
+2016-2018 Curricular Feedback
+2. Create Survey
+
+Clicking on Create Survey should take the user to a page where a new survey can be created. For example:
+
+Survey Builder > Create Survey
+Name of the survey: 
+ Create
+
+Note that only the name is needed to create a survey -- the questions will be added later. After the survey is created, the user should be redirected to the survey listing page. Clicking on Survey Builder should also take the user to the survey listing page.
+
+3. View Survey
+
+Clicking on the name of a survey displays the survey. For example:
+
+Survey Builder > CS 4691 Readiness Survey for Fall 2019
+Add Question
+
+1. Have you completed all the following prerequisite CS courses with minimum C grade: CS3035, CS3112, CS3186, CS3220, CS3337, and CS3801? 
+
+ Yes
+ No, but I will complete all the six requirements by the end of Spring 2019.
+ No, and I will not be able to complete them by the end of Spring 2019.
+Note that the name of the survey is displayed at the top, followed by a link (or button) to add a question to the survey, followed by the questions of the survey and the choices for each question. Again, clicking on Survey Builder takes the user back the survey listing page.
+
+4. Add Question
+
+Clicking on Add Question takes the user to a page where  a new question for the survey can be created. For example:
+
+Survey Builder > CS 4691 Readiness Survey for Fall 2019 > Add Question
+Question: 
+
+Choices:
+
+Add Question
+
+Note that a question can have up to 10 choices, but not all questions will have 10 choices. A user will enter the choices one by one starting from the first field, and the system should ignore all the empty fields in a submitted form. Clicking on the Add Question button adds the question to the survey and redirects the user to the survey page. Clicking on Survey Builder and the name of the survey should take the user to the survey listing and the survey page, respectively.
+
+[Grading]
+
+List surveys (20pt)
+Create survey (20pt)
+View Survey (25pt)
+Add Question (35pt)
+midterm.html is missing or does not have the correct link to your application on the CS3 server (-5pt)
+Only features working correctly on the CS3 server will receive full credit. Partial credit will be given at my discretion.
+Please do not modify your files on the CS3 server after the due time. Doing so will be considered cheating.
