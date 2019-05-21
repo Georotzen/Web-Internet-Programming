@@ -13,24 +13,23 @@ import javax.servlet.http.HttpServletResponse;
 public class ViewSurvey extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    public ViewSurvey() {
-        super();
-    }
+    	public ViewSurvey() {
+        	super();
+    	}
     
-    @SuppressWarnings("unchecked")
-    private Survey getSurvey(Integer id) {
-        List<Survey> surveys = (List<Survey>) getServletContext().getAttribute("surveys");
+    	@SuppressWarnings("unchecked")
+    	private Survey getSurvey(Integer id) {
+        	List<Survey> surveys = (List<Survey>) getServletContext().getAttribute("surveys");
 
-        for(Survey survey : surveys) {
-        	if(survey.getId() == id) {
-        		return survey;
+        	for(Survey survey : surveys) {
+        		if(survey.getId() == id) {
+        			return survey;
+        		}
         	}
-        }
-        return null;
-    }
+        	return null;
+    	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		Survey survey = getSurvey(Integer.valueOf(request.getParameter("id")));
 		
 		List<Question> questions = survey.getQuestions();
@@ -47,5 +46,4 @@ public class ViewSurvey extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
 }
