@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Grades</title>
+<style>
+  td { 
+    text-align: center;
+  }
+  dbl {
+    text-align: left;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<table border="1">
+<tr><th>Name</th><th>Homework 1</th><th>Homework 2</th><th>Grade</th></tr>
+<tr><td id="target">John</td><td id="target">90</td><td>80</td><td id="target">B</td></tr>
+<tr><td id="target">Jane</td><td id="target">90</td><td>100</td><td id="target">A</td></tr>
+</table>
+<script>
+  var tddblclk= $("td");
+  tddblclk.dblclick(function() {
+      tddblclk.toggleClass("dbl");   
+    });
+</script>
+</body>
+</html>
+

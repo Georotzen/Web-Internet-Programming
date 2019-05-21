@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dollar Converter</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+var rates = {
+    "EUR" : 0.934,
+    "GBP" : 0.791,
+    "INR" : 64.659,
+    "AUD" : 1.326
+};
+$(document).ready(function(){
+    $('#currency').on('change', function() {
+        var currency = $(this).val();
+        var dollar = $("#dollar").val();
+        var convertion = 0;
+        if (currency === "EUR") {
+            convertion = parseInt(dollar) * rates["EUR"];
+        }
+        if (currency === "GBP") {
+            convertion = parseInt(dollar) * rates["GBP"];
+        }
+        if (currency === "INR") {
+            convertion = parseInt(dollar) * rates["INR"];
+        }
+        if (currency === "AUD") {
+            convertion = parseInt(dollar) * rates["AUD"];
+        }
+        document.getElementById("amount").innerHTML = convertion;
+   });
+});
+  
+</script>
+</head>
+<body>
+<input type="number" id="dollar" value="0" /> Dollar = <span id="amount">0</span>
+<select id="currency">
+    <option value="EUR">EUR</option>
+    <option value="GBP">GBP</option>
+    <option value="INR">INR</option>
+    <option value="AUD">AUD</option>
+</select>
+</body>
+</html>

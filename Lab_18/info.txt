@@ -1,0 +1,25 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file lab18.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after the due time, and late submission will not be accepted. Please do not change the files uploaded to CS3 after the due time - doing so will be considered cheating.
+
+Develop a web application that uses the File Manager Database (file-manager.sql) as the backend. Your implementation must follow the MVC architecture and use JDBC for database access.
+
+Note that the "files and folders" in this application are not really files or folders on disk -- they are simply data in a database representing some "virtual" directory structure.
+
+1. (40pt) When the web application is accessed without any request parameters, it displays the top-level files and folders owned by user cysun as shown below:
+
+[New Folder]
+
+\ My Documents	Delete
+\ Courses	Delete
+\ git	Delete
+test.sql	Delete
+settings.xml	Delete
+2. (20pt) A user may click on a folder to enter that folder, in which case the application displays the files and/or folders inside the selected folder; for empty folders, display a message "This folder is empty". For example:
+
+Courses [New Folder]
+
+\ CS3220	Delete
+\ CS5220	Delete
+SomeFile.txt	Delete
+3, (40pt) Add new folder. Note that a new folder can be added as a top-level folder or under any existing folder. You can set the owner of the new folders to the user cysun.
+
+4. (20pt) Delete file and folder. Deleting a folder simply deletes the folder itself -- you don't need to worry about the files/folders inside.

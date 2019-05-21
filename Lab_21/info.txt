@@ -1,0 +1,9 @@
+Please put your JavaScript code in the HTML file (instead of using separate .js files) and upload the HTML file to CSNS.
+
+1. (40pt) Add JavaScript code to Grade.html so that a user can double-click on a table cell to edit the content of the cell.
+
+HINTS:
+
+Add a double-click event handler to <td>. In the event handler, replace the current content of the <td> with an input field, and set the value of the input field to the original content of the <td>.
+Add a blur event handler to the input field (a blur event happens when an element loses focus). In the event handler, remove the input field and set the value of the input field to the content of the <td>.
+2. (+40pt) For extra credit, use a dropdown list  instead of an input field when editing the Grade column.

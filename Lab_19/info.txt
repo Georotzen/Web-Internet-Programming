@@ -1,0 +1,9 @@
+Please put all the JavaScript code in a .js file and upload it to CSNS.
+
+1. (15pt) Write a JavaScript function min1() that takes an array of numbers as argument and returns the smallest number in the array. You must implement this function using a loop statement.
+
+2. (15pt) Write a JavaScript function min2() that takes an array of numbers as argument and returns the smallest number in the array. You must implement this function using the forEach() method in Array.
+
+3. (15pt) Write a JavaScript function factorial() that takes an positive integer n and returns n!, which is 1*2*..*(n-1)*n. You must implement this function using recursion.
+
+4. (15pt) Write a JavaScript function palindrome() that takes a string and determine if it's a plindrome, i.e. a word that reads the same forward and backward, e.g. "racecar". You must implement this function using String methods.
