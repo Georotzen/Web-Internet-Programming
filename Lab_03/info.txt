@@ -1,0 +1,22 @@
+1. Create an HTML page Faculty.html that looks like what's shown in the picture below:
+
+Faculty.png
+
+Note that
+
+Please use border="1" and cellpadding="2" for the <table> -- we'll be more HTML5-compliant later after we learn CSS.
+Clicking on the Add Faculty link should take the user to the AddFaculty.html page described in the next exercise.
+You may find the faculty information on the ECST Home Page under the menu Faculty/Staff -> ECST Faculty.
+2. Create an HTML page AddFaculty.html that looks like what's shown in the picture below:
+
+AddFaculty.png
+
+Note that
+
+You may omit the action and method attributes of the <form>.
+The form fields should be placed inside a table so they are properly aligned.
+The dropdown list should include three entries: Computer Science, Electrical & Computer Engineering, and Civil Engineering.
+Clicking on the ECST Faculty link should take the user back to the Faculty.html page described in the previous exercise.
+3. Upload both Faculty.html and AddFaculty.html to your CS3 account and make sure they work properly on CS3.
+
+4. Create another HTML file lab3.html which contains a hyperlink to your Faculty.html page on the CS3 server, and upload all three HTML files to CSNS.

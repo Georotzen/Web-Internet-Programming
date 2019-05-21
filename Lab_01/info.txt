@@ -1,0 +1,37 @@
+1. Download and install Visual Studio Code
+
+Visual Studio Code is the recommended HTML/CSS editor for this class. Alternatively, you may also use Atom or Sublime Text.
+
+2. In VS Code (or the editor of your choice), create an HTML file index.html that looks like follows:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>cs3220stu31</title>
+</head>
+<body>
+  <h2>cs3220stu31's Home Page</h2>
+</body>
+</html>
+
+Note that you should replace cs3220stu31 with your actual CS3 account username.
+
+3. Upload index.html to the public_html folder of your account on the CS3 server. If you don't have any file transfer tool, download and install either WinSCP or FileZilla (choose the SFTP protocol in FileZilla). After the file is uploaded, make sure it works at the URL http://cs3.calstatela.edu/~<username>/index.html where <username> is your username on CS3.
+
+4. Create another HTML file lab1.html which contains a hyperlink to your index.html page on the CS3 server. For example:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CS3220 Lab 1</title>
+</head>
+<body>
+  <p><a href="http://cs3.calstatela.edu/~cs3220stu31/index.html">Lab 1</a></p>
+</body>
+</html>
+
+Again, replace cs3220stu31 with your actual CS3 username.
+
+5. Upload both index.html and lab1.html to CSNS under the assignment Lab 1. Use of CS3 and CSNS.

@@ -1,0 +1,16 @@
+1. In this lab you are going to use CSS to style csula.html so it looks like what's shown in the picture below (you can click on the picture to see a larger version):
+
+
+In particular:
+
+*The first menu bar should have black background. The text should be white, right aligned, and in smaller font. The separator | should be in gold.
+CAL STATE LA should be in large font and vertically aligned in the middle next to the CSULA logo. 
+*The second menu bar should have gold background, and all the text should be left aligned and in upper case.
+*The headline titles should be in bold, larger font.
+*The paragraphs of the headlines should be indented.
+*The footer should have black background, and the text should be centered aligned and in smaller font.
+*For this exercise you must use an external style sheet, and you may not change the content, i.e. text, image, and links, of csula.html; however, you are free to add/change/remove tags and/or attributes.
+
+2. Upload csula.html and the style sheet to your CS3 account and make sure the page works properly on CS3.
+
+3. Create another HTML file lab4.html which contains a hyperlink to your csula.html page on the CS3 server, and upload both HTML files and the style sheet to CSNS.

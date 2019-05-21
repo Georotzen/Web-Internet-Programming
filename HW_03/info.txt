@@ -1,0 +1,43 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file hw3.html which contains a hyperlink to your application on the CS3 server. Note that file uploading will be disabled automatically after 11:59PM of the due date, so please turn in your work on time.
+
+[Candidate Reviews]
+
+In this assignment you are going to continue to work on the candidate review web application. Your implementation must use the MVC architecture discussed in class. All features described in previous homework must work properly; otherwise you will not receive any credit.
+
+1. (20pt) List Candidates
+
+The main page of the application lists all the candidates. For example:
+
+ID	Name	Specialties	Presentation	Rating	Operation
+1	John	Machine Learning	10am on 2/20 in ET A227	4.0	Edit
+2	Jack	Computer Vision	10am on 2/25 in ET A332	4.5	Edit
+3	Jane	Machine Learning	3pm on 2/27 in ET A126	N/A	Edit
+4	May	Computer Science Education	3:30pm on 3/11 in FA 219	N/A	Edit
+Add Candidate
+
+This page differs from the one in the previous assignment in two places. First, a user can click on the name of a candidate to see the feedback for the candidate; second, there is a Rating column that shows the average rating for each candidate. Note that if a candidate has not received any feedback yet, the average rating field for the candidate should show N/A.
+
+2. (40pt) Display Feedback
+
+Clicking on the name of a candidate should take the user to a page that displays the feedback for the candidate. For example:
+
+Back to Candidates
+
+ID	Name	Specialties	Presentation	Rating
+1	John	Machine Learning	10am on 2/20 in ET A227	4.5
+Comments:
+
+Rating: 5	Posted by Sue on 3/10/2019
+I like his research. Seems to be a nice person.
+Rating: 3	Posted by Tom on 3/11/2019
+The presentation was not very well organized. He may be a good researcher but I don't think he'll be a good teacher. 
+Please give you feedback:
+
+Rating	1      5
+Name	
+Comments	
+Clicking on Back to Candidates takes the user back to the main page.
+
+3. (40pt) Give Feedback
+
+A user may use the form on the feedback page to give their feedback on the candidate -- all fields in the form are required. Note that because we haven't implemented user authentication yet, a user may leave multiple reviews for a candidate, and that is fine for this assignment.

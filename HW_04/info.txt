@@ -1,0 +1,10 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file hw4.html which contains a hyperlink to your application on the CS3 server.
+
+[Candidate Reviews]
+
+(100pt) Modify the Candidate Reviews application you developed in the previous homework so that it stores data in a database instead of in the application scope.
+
+The application must use MVC architecture, and database access must use JDBC.
+All features described in previous assignments must work; otherwise you may not receive any credit.
+In addition to the application source code, please turn in an SQL script file hw4.sql which contains the statements to create and populate all the tables in the database.
+ 

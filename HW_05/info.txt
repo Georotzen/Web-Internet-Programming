@@ -1,0 +1,28 @@
+Please deploy your application on CS3, and upload all source files to CSNS. The source files should include all the source code, documentation (optional), and an HTML file hw5.html which contains a hyperlink to your application on the CS3 server.
+
+[Candidate Reviews]
+
+This is an extra credit assignment. In this assignment you are going to continue to work on the candidate review application. All functions described in previous assignments must work properly; otherwise you may not receive any credit.
+
+(+50pt) Security
+
+Implement security so that
+
+All users can view everything (i.e. candidate information and feedback).
+Only authenticated users (i.e. users who have already logged in. We will refer to users who are not logged in as anonymous users.) can give feedback. Each user can only leave one feedback for each candidate.
+Only admin users can add/edit candidate information.
+Further, your security implementation must meet the following requirements:
+
+A Login/Logout link should be shown on each page. The link should show Login if the user has not logged in yet, and Logout if the user is already logged in.
+After a user logs in (or logs out), the user should be redirected to the candidate listing page.
+Links/buttons to operations that are only available to authenticated users should be hidden from anonymous users.
+Links/buttons to operations that are only available to admin users should be hidden from other users.
+Note that hiding links is more about improving user interface (i.e. don't confuse people with operations they cannot perform) than providing security because a user can always manually enter a URL. So in the code that performs an operation, you must check if the current user is allowed to perform that operation.
+User authentication must happen on the server side, i.e. you cannot use JavaScript to verify username/password on the client side.
+Once a user is authenticated, a session is created so the user won't be asked for username and password repeatedly. A user may choose to log out, in which case the session should be terminated. For session tracking, you must use Servlet Session Tracking API.
+Two user account must be pre-created for testing purposes:
+A regular user with username john and password abcd
+An admin user with username cysun and password abcd
+(+20pt) Edit Feedback
+
+Allow a user to edit his or her own feedback. Note that the Edit Feedback form must be pre-filled with the current feedback.

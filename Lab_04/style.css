@@ -1,0 +1,39 @@
+#head {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+#head em {
+    color: gold;
+}
+
+#footer {
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#yellow-bar {
+    background-color: gold;
+    text-transform: uppercase;
+}
+
+#calstatelatext {
+    font-size: 175%;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#calstatelaimage {
+    vertical-align: middle;
+}
+
+.sub-headers {
+    font-weight: bold;
+    font-size: large;
+}
+
+p {
+    text-indent: 1%;
+}

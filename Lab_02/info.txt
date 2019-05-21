@@ -1,0 +1,15 @@
+Starting from this assignment, all HTML pages created in this class should be in HTML 5 unless otherwise specified.
+
+1. Create an HTML page cs.html that looks like what's shown in the following picture (pic in lab):
+
+
+2. Upload both cs.html and the ABET logo image to your CS3 account and make sure the page works properly on CS3.
+
+3. Create another HTML file lab2.html which contains a hyperlink to your cs.html page on the CS3 server, and upload both HTML files to CSNS.
+
+[Notes]
+
+You can get the text on the page, the URLs for the links, and the images from the Computer Science Department website.
+The width of the CSULA logo should be set to 54px, and the height of the ABET log should be set to 86px.
+You must use an absolute URL to link to the CSULA logo image in cs.html, and use a relative URL to link to the ABET logo image.
+Clicking on the CSULA logo should take the user to the CSULA website.
