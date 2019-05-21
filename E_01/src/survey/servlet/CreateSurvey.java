@@ -14,12 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 public class CreateSurvey extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
-    public CreateSurvey() {
-        super();
-    }
+    	public CreateSurvey() {
+        	super();
+    	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		  request.getRequestDispatcher("/WEB-INF/CreateSurvey.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/CreateSurvey.jsp").forward(request, response);
 	}
 
 	@SuppressWarnings("unchecked")
