@@ -13,12 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/AddCandidate")
 public class AddCandidate extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
 	Integer idSeed = 5;
        
-    public AddCandidate() {
-        super();
-    }
+   	public AddCandidate() {
+        	super();
+    	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
@@ -35,7 +34,6 @@ public class AddCandidate extends HttpServlet {
 				+ " padding: 2px 2px 2px 2px; spacing: 2px 2px 2px 2px;}</style>");
 		out.println("</head>");
 		out.println("<body>");
-		
 		out.println("<form action='AddCandidate' method='post'>");
 		out.println("<table>");
 		out.println("<tr>");
@@ -55,7 +53,6 @@ public class AddCandidate extends HttpServlet {
 		out.println("</tr>");
 		out.println("</table>");
 		out.println("</form>");
-		
 		out.println("</body>");
 		out.println("</html>");
 		
@@ -63,7 +60,6 @@ public class AddCandidate extends HttpServlet {
 
 	@SuppressWarnings("unchecked")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		String name = request.getParameter("name");
 		String specialities = request.getParameter("specialities");
 		String presentation = request.getParameter("presentation");
@@ -75,5 +71,4 @@ public class AddCandidate extends HttpServlet {
 		
 		response.sendRedirect("CandidateReview");
 	}
-
 }
