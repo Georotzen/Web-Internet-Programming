@@ -33,6 +33,4 @@ public class Question {
 		choices.add(choice);
 		
 	}
-
-	
 }
