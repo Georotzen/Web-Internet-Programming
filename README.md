@@ -23,5 +23,5 @@ Server Build in: <br>
 Apache Tomcat 8.5<br>
 
 ****************************************************************************************************************************
-Program descriptions available as info.txt on each web app folder.
+Program descriptions available as info.txt on each web app folder.<br>
 Code is not commented, and doesn't have any documentation.
