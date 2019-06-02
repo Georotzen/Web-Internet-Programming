@@ -11,21 +11,17 @@ Development of database-driven, multi-tiered, interactive web applications. HTML
 
 ****************************************************************************************************************************
 
-Content:
-
-Lab_01 - Lab_22 Labs
-
-HW_01 - HW_05 Homework
-
-E_01 Midterm
-
-E_02 Final Exam
+Content:<br>
+Lab_01 - Lab_22 Labs<br>
+HW_01 - HW_05 Homework<br>
+E_01 Midterm<br>
+E_02 Final Exam<br>
 
 ****************************************************************************************************************************
 
-Server Build in: 
-
-Apache Tomcat 8.5
+Server Build in: <br>
+Apache Tomcat 8.5<br>
 
 ****************************************************************************************************************************
-Program descriptions available as info.txt on each web app folder
+Program descriptions available as info.txt on each web app folder.
+Code is not commented, and doesn't have any documentation.
