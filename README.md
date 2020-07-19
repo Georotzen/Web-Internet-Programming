@@ -24,4 +24,4 @@ Apache Tomcat 8.5<br>
 
 ****************************************************************************************************************************
 Program descriptions available as info.txt on each web app folder.<br>
-Code is not commented, and doesn't have any documentation.
+Code is not commented, or have any documentation due to various reasons, including but not limited to lack of time while being coded, code is not meant to be revisited, commenting code for homework assigments can sometimes be useless.
