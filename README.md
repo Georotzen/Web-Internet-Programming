@@ -12,9 +12,16 @@ Development of database-driven, multi-tiered, interactive web applications. HTML
 ****************************************************************************************************************************
 
 Content:<br>
-Assignment 1 - Assignment 11<br>
-Other Assignments<br>
+Lab_01 - Lab_22 Labs<br>
+HW_01 - HW_05 Homework<br>
+E_01 Midterm<br>
+E_02 Final Exam<br>
 
 ****************************************************************************************************************************
-Program descriptions available as Assigment_X.pdf on application folder.<br>
+
+Server Build in: <br>
+Apache Tomcat 8.5<br>
+
+****************************************************************************************************************************
+Program descriptions available as info.txt on each web app folder.<br>
 Code is not commented, or have any documentation due to various reasons, including but not limited to lack of time while being coded, code is not meant to be revisited, commenting code for homework assigments can sometimes be useless.
